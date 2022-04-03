@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     # Internal apps
     'tweets',
+
+    # External apps
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
