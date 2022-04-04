@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Internal apps
     'tweets',
+    'accounts',
 
     # External apps
     'rest_framework',
