@@ -9,6 +9,7 @@ from .models import Tweet
 class TweetListCreateApiView(generics.ListCreateAPIView):
     queryset = Tweet.objects.all()
     serializer_class = TweetSerializer
+    lookup_field = 'pk'
 
     def perform_create(self, serializer):
         title = serializer.validated_data.get('title')
